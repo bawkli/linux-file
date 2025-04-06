@@ -1,5 +1,6 @@
 **Mothod 1: Using SCP(Secure Copy)**
 SCP is a simple and secure way to trnsfer files over SSH between two computers.
+
 1: Prerequisites:
    - Both PC1 and PC2 myst have SSH installed
    - PC1 needs to know PC2's IP address(e.g., 192.168.1.101).
