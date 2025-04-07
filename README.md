@@ -6,15 +6,18 @@ SCP is a simple and secure way to trnsfer files over SSH between two computers.
    - Both PC1 and PC2 myst have SSH installed
    - PC1 needs to know PC2's IP address(e.g., 192.168.1.101).
    - PC2 much have an SSH server running:
+     
      bash
-      sudo apt update
+     
+      ```sudo apt update
       sudo apt install openssh-server
       sudo systemct1 enable ssh
-      sudo systemct1 start ssh
+      sudo systemct1 start ssh```
 
 2. On PC1(Sender):
    - Find the file you want to share(e.g., /home/user1/file.txt).
    - Use SCP to send it to PC2:
+     
      bash
 
       ``` scp /home/user1/file.txt user2@192.168.1.101:/home/user2/ ```
@@ -43,13 +46,20 @@ SFTP provides an interactive way to transfer files over SSH.
   
 3. In the SFTP Prompt:
    - Upload the file:
+     
      bash
-     put /home/user1/file/txt
+     
+     ```put /home/user1/file/txt```
+     
    - The file goes to the default home directory on PC2 (/home/user2/ ), or specify a path:
   
      bash
-     put /home/user1/file.txt /home/user2/shared/
+     
+     ```put /home/user1/file.txt /home/user2/shared/```
+     
    - Exit SFTP
+  
       bash
-      exit
+     
+      ```exit```
 
