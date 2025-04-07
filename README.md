@@ -1,4 +1,5 @@
 **Mothod 1: Using SCP(Secure Copy)**
+
 SCP is a simple and secure way to trnsfer files over SSH between two computers.
 
 1: Prerequisites:
@@ -22,19 +23,20 @@ SCP is a simple and secure way to trnsfer files over SSH between two computers.
      - Replace 192.168.1.101 with PC2's IP address (find it on PC2 with ip addr show).
      - Replace /home/user2/ with the destination path on PC2.
 
-
 On PC2 (Receiver):
   - Enter the password for user2 when prompted (unless SSH keys are set up).
   - Check the file in /home/user2/.
 
 **Method 2: Using SFTP (Secure File Transfer Protocol)**
+
 SFTP provides an interactive way to transfer files over SSH.
- 1. On PC2:
+
+1. On PC2:
     - Ensure the SSH server is running (see Method 1).
 2. On PC1:
    - Start an SFTP session:
      bash
-     `code`sftp user2@192.168.1.101
+     `sftp user2@192.168.1.101`
      
    - Enter the password for user2.
   
