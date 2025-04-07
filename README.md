@@ -36,7 +36,7 @@ SFTP provides an interactive way to transfer files over SSH.
 2. On PC1:
    - Start an SFTP session:
      bash
-     `sftp user2@192.168.1.101`
+     ```sftp user2@192.168.1.101```
      
    - Enter the password for user2.
   
