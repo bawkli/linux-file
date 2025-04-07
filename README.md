@@ -17,19 +17,11 @@ SCP is a simple and secure way to trnsfer files over SSH between two computers.
    - Use SCP to send it to PC2:
      bash
 
-      scp /home/user1/file.txt user2@192.168.1.101:/home/user2/
+      ``` scp /home/user1/file.txt user2@192.168.1.101:/home/user2/ ```
 
      - Replace user2 with the username on PC2
      - Replace 192.168.1.101 with PC2's IP address (find it on PC2 with ip addr show).
      - Replace /home/user2/ with the destination path on PC2.
-
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
 
 On PC2 (Receiver):
   - Enter the password for user2 when prompted (unless SSH keys are set up).
